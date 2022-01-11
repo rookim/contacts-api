@@ -6,6 +6,6 @@ class ContactsController < ApplicationController
 
   def get_all_contacts
     all = Contact.all
-    redner json: all
+    render json: all
   end
 end
