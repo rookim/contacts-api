@@ -3,4 +3,9 @@ class ContactsController < ApplicationController
     first = Contact.first
     render json: first
   end
+
+  def get_all_contacts
+    all = Contact.all
+    redner json: all
+  end
 end
